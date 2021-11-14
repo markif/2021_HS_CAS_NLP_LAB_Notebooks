@@ -1,0 +1,14 @@
+[Unit]
+Description=Sentiment classifier REST server
+After=network.target
+
+[Service]
+ExecStart=/opt/bin/sentiment_classifier/rest-server.py
+WorkingDirectory=/home/pi
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target

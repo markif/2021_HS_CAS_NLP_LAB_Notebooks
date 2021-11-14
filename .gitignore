@@ -1,0 +1,7 @@
+.ipynb_checkpoints
+.classifiers
+.data
+.fasttext
+
+*.bin
+*.gz
